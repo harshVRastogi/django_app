@@ -3,6 +3,6 @@ from . import views
 
 app_name = "about"
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'', views.index, name='index'),
     url(r'^download/$', views.download_resume, name='download')
 ]
