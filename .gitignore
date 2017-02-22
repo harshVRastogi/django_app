@@ -1,1 +1,5 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
+.idea/
+blog/about/__pycache__/
+blog/about/migrations/__pycache__/
+blog/blog/__pycache__/
