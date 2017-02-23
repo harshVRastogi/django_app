@@ -3,3 +3,4 @@
 blog/about/__pycache__/
 blog/about/migrations/__pycache__/
 blog/blog/__pycache__/
+*.pyc
