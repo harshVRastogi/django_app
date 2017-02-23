@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import sys
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +27,15 @@ SECRET_KEY = 'm-vrs*r9#(*@@^p^pqjto&d!c76_bx&#=r14f@z2eu5^)+ui)a'
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
+# Added for site base path
+HOSTNAME = 'localhost'
 
+if len(sys.argv) > 1 and sys.argv[1] == 'runserver':
+	BASE_URL = HOSTNAME + ":8000"
+else:
+	BASE_URL = HOSTNAME + "/primarche"
+
+PROTOCOL = "http"
 
 # Application definition
 
